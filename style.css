@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 16em;
+  /* background: url('laptop.jpg'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F0E9E6;
+  padding-top: 3em;
+  margin:0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e9e1de;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  font-family: "Itim", cursive;
+  font-size: 1.2em;
+}
+
+nav ul{
+  /* border: 2px solid rgb(15, 1, 1); */
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+nav li{
+  height: 50px;
+}
+nav ul li img {
+  /* border: 2px solid red; */
+  max-height: 40px; /* Adjust the height as needed */
+  max-width: 100%;  /* Ensure the image does not exceed the container width */
+  margin-right: 10px; /* Add some spacing to the right of the image */
+  padding-left: 20%;
+  padding-top: 5%;
+  /* position: relative; */
+  /* right: ; */
+}
+
+nav a{
+  /* border: 2px solid red; */
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: transform 1.0 ease-in;
+  /* border: 2px solid gray; */
+}
+.hoverEffectClass:hover{
+  background-color: #e1d9d3;
+  transform: translateY(1px);
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 50em){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 25em  ){
+  .sidebar{
+    width: 100%;
+  }
+}
+.intro {
+  /* border: 2px solid red; */
+  height: auto; /* Adjust as needed */
+  /* margin: 3em; */
+}
+
+.introCont {
+  display: flex;
+  justify-content: space-between; /* Align content to the start and end of the container */
+  /* border: 2px solid rgb(81, 72, 122); */
+  padding: 4em;
+  margin: 2em;
+}
+
+.introContent {
+  width: 70%; /* Adjust as needed */
+}
+
+.introImage {
+  width: 25em; /* Adjust as needed */
+  text-align: right; /* Align the image to the right within its container */
+  /* border: 2px solid red; */
+  position: relative;
+  left:4em;
+  /* top: 4em; */
+}
+
+.introImage img {
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+#tagline{
+  /* border: solid 2px red; */
+  width: 11em;
+  height: 2em;
+  position: relative;
+  top: 15em;
+  right: 8em;
+  font-size: large;
+  font-family: "Kalam", cursive;
+  color: #7F8CD9;
+}
+footer{
+  /* border: 2px solid violet; */
+  display: flex;
+  background-color: #E5DDDA;
+  width: 100%;
+  
+}
+#contactUs{
+  /* border: 3px solid rgb(0, 0, 0); */
+  padding: 2em;
+  width: 25%;
+  font-family: "Caveat", cursive;
+  /* display: ; */
+}
+#aboutUs{
+  /* border: 3px solid rgb(247, 28, 28); */
+  padding: 2em;
+  width: 75%;
+  font-family: "Caveat", cursive;
+}
+#idintro{
+  position: relative;
+  top:4em;
+  font-family: "Kalam", cursive;
+  font-size: x-large;
+}
+.divBody{
+  /* border: 2px solid rgb(8, 8, 8); */
+  font-family: "Kalam", cursive;
+
+}
+.divHead{
+  /* border: 2px solid rgb(220, 236, 2); */
+  font-family: "Kalam", cursive;
+  font-size: xx-large;
+}
+#divContactHead{
+  font-family: "Kalam", cursive;
+  /* border: 4px solid green; */
+}
+
+#divContactBody{
+  /* border: 4px solid rgb(151, 24, 60); */
+}
+#divAboutHead{
+  /* border: 4px solid green; */
+  font-family: "Kalam", cursive;
+}
+#divAboutBody{
+  font-family: "Kalam", cursive;
+  /* border: 4px solid rgb(129, 141, 129); */
+}
+#divPhone{
+  /* border: 2px solid red; */
+  /* padding: 0.5em; */
+}
+#divEmail{
+  /* border: 2px solid black; */
+  height: 2em;
+  /* padding: 0.5em; */
+}
+#divEmailImg{
+  /* border: 2px solid rgb(161, 26, 48); */
+  width: 2em;
+  position: relative;
+  top:0.3em;
+  right: 0.27em;
+}
+#divPhoneImg{
+  /* border: 2px solid rgb(161, 26, 48); */
+  width: 1.5em;
+  position: relative;
+  top:0.7em;
+  left: 0em;
+}
+#emailInfo{
+  /* border:2px red solid; */
+  display: flex;
+  width: 7em;
+  position: relative;
+  left:2em;
+  bottom:1.8em;
+  
+}
+#phoneInfo{
+  /* border: 2px solid green; */
+  width: 9em;
+  position: relative;
+  left: 2.1em;
+  bottom: 1.1em;
+}
+.typing-container {
+  overflow: hidden;
+}
+
+#typing-text {
+  /* border: 2px solid green;  */
+  font-size: 1.25em;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: 2px solid #000; */
+  padding-right: 8px;
+  font-family: "Kalam", cursive;
+  /* animation: typing 2s steps(40) infinite; */
+}
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+/* 
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+} */
+.featuresInfo{
+position: relative;
+/* border: 2px solid red; */
+left: 2em;
+}
+/* #prototype{
+  width: 100%;
+} */
+/* .toAdjustTypeLength{
+  width: 90%;
+} */
